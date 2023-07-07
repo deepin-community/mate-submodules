@@ -1,1 +1,1 @@
-# template-repository
+#mate-submodules
