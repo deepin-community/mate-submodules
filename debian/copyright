@@ -1,22 +1,59 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: mate-submodules
+Source: https://github.com/mate-desktop/mate-submodules
 
-Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+Files: .build.yml
+ .github/ISSUE_TEMPLATE/mate-issue-template.md
+ .travis.yml
+ Makefile.am
+ configure.ac
+ libegg/Makefile.am
+ libegg/meson.build
+ meson.build
+Copyright: 2012-2021, MATE Developers
+License: LGPL-2+
+Comment:
+ Assuming MATE Developers as copyright holders.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ Using license from libegg for now, as there is no
+ better hint in the source tree.
+
+Files: libegg/eggdesktopfile.h
+ libegg/eggsmclient-private.h
+ libegg/eggsmclient.c
+ libegg/eggsmclient.h
+Copyright: 2007, Novell, Inc.
+  2012-2021, MATE Developers
+License: LGPL-2+
+
+Files: libegg/eggtreemultidnd.c
+ libegg/eggtreemultidnd.h
+Copyright: 2001, Red Hat, Inc.
+  2012-2021, MATE Developers
+License: LGPL-2+
+
+Files: libegg/eggdesktopfile.c
+Copyright: 1999-2000, Red Hat Inc.
+  2001, George Lebl
+  2007, Novell, Inc.
+  2012-2021, MATE Developers
+License: LGPL-2+
+
+Files: libegg/eggsmclient-xsmp.c
+Copyright: 1998, The Open Group.
+  2001, Havoc Pennington, MateClient (C) 1998 Carsten Schaar, and twm
+  2007, Novell, Inc.
+  2012-2021, MATE Developers
+License: LGPL-2+
+
+Files: debian/*
+Copyright: 2021-2023, Mike Gabriel <sunweaver@debian.org>
+License: LGPL-2+
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Library General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ See /usr/share/common-licenses/LGPL-2 for the full license text.
